@@ -8,6 +8,7 @@ header{
   padding: 30px 20px!important;
   font-size: 14px!important;
   font-weight: 600!important;
+  margin-bottom: 50px!important;
 }
 header:after{ /* Takes care of the items inside of it that are being floated, put on the parent */
   content: " ";
@@ -39,11 +40,11 @@ header .header-buttons{
   display: inline-block;
   float: right;
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 header .header-buttons .blue-btn{
-  background: #4C44C1;
-  padding: 10px 40px;
+  background: #6066F2;
+  padding: 14px 46px;
   color: #fff;
   border-radius: 35px;
   text-transform: uppercase;
@@ -56,7 +57,7 @@ header .header-buttons .blue-btn .fas{
 }
 header .header-buttons .orange-btn{
   background: #FEA83B;
-  padding: 10px 40px;
+  padding: 14px 46px;
   color: #fff;
   border-radius: 35px;
   text-transform: uppercase;
@@ -74,8 +75,18 @@ header .header-buttons .orange-btn{
   margin: 0 auto; /* Centering the content in the middle of the screen */
   padding: 0 20px;
 }
+.box-shadow-default{
+  -webkit-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
+  box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
+}
+
+/*
+///////////////////////////////
+*/
 
 #top-jumbo{
+  padding: 0 0 400px;
   background: #fff; /* Old browsers */
   background: -moz-linear-gradient(-45deg, #fff 0%, #fff 40%, #8948f2 77%, #e0a1df 100%);
   background: -webkit-linear-gradient(-45deg, #fff 0%, #fff 40%, #8948f2 77%, #e0a1df 100%);
@@ -87,12 +98,69 @@ header .header-buttons .orange-btn{
   clear: both;
 }
 #top-jumbo .left-side{
-  width: 35%;
+  width: 40%;
   display: inline-block;
   float: left;
 }
+#top-jumbo .left-side .large-number{
+  font-size: 300px;
+  font-weight: 700;
+  opacity: .1;
+  color: #4C44C1;
+  position: relative;
+  left: -20px;
+  top: 0;
+  z-index: 1;
+}
+#top-jumbo .left-side .info-container{
+  position: relative;
+  top: -100px;
+}
+#top-jumbo .left-side .info-container h1{
+  font-size: 4.5rem;
+  color: #6066F2;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+#top-jumbo .left-side .info-container p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #AAACAF;
+  margin-bottom: 1.5rem;
+}
+#top-jumbo .left-side .info-container .email-area{
+  background: #fff;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px;
+}
+#top-jumbo .left-side .info-container .email-area .fas{
+  font-size: 2rem;
+  position: relative;
+  top: 7px;
+  margin-left: 15px;
+}
+#top-jumbo .left-side .info-container .email-area input[type="email"]{
+  background: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 230px;
+}
+#top-jumbo .left-side .info-container .email-area button{
+  background: #6066F2;
+  padding: 20px 50px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 #top-jumbo .right-side{
-  width: 65%;
+  width: 60%;
   display: inline-block;
   float: left;
 }
