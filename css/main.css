@@ -3,6 +3,9 @@
 /*
 ///////////////////////////////
 */
+*{
+	box-sizing: border-box;
+}
 
 header{
   padding: 30px 20px!important;
@@ -48,9 +51,6 @@ header .header-buttons .blue-btn{
   color: #fff;
   border-radius: 35px;
   text-transform: uppercase;
-  -webkit-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
-  box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
 }
 header .header-buttons .blue-btn .fas{
   margin-left: 10px;
@@ -61,9 +61,6 @@ header .header-buttons .orange-btn{
   color: #fff;
   border-radius: 35px;
   text-transform: uppercase;
-  -webkit-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
-  box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
 }
 
 /*
@@ -71,11 +68,15 @@ header .header-buttons .orange-btn{
 */
 
 .container{
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; /* Centering the content in the middle of the screen */
   padding: 0 20px;
 }
-.box-shadow-default{
+.container-fluid{
+  margin: 0 5%; /* Centering the content in the middle of the screen */
+  padding: 0 20px;
+}
+.box-shadow-down{
   -webkit-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
   box-shadow: 0px 17px 40px -10px rgba(0,0,0,0.3);
@@ -163,6 +164,7 @@ header .header-buttons .orange-btn{
   width: 60%;
   display: inline-block;
   float: left;
+  padding: 0 40px;
 }
 #top-jumbo .right-side img{
   width: 100%;
